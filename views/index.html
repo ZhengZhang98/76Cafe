@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--mobile-->
+<meta charset = "UTF-8"/>
+
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"> </script>
+<script src="js/modernizr.custom.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<script type="application/x-javascript">
+addEventListener("load", function(){setTimeout(hideURLbar,0);},false); 
+function hideURLbar(){window.scrollTo(0,1);}
+</script>
+<!--js-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+
+</head>
+  <!--start-home-->
+ <body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--button-->
+		  <section class="button">
+					<button id="showLeftPush"><img src="images/menu-icon.png" alt=""></button>
+		   </section>
+		   <!--隐藏滑动菜单-->
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+				<a class="active scroll" href="#house">Home</a>
+				<a class="scroll" href="#about">About</a>
+				<a class="scroll" href="#service">Services</a>
+				<a class="scroll" href="#gallery">Gallery</a>
+				<a class="scroll" href="#price">Prices</a>
+				<a class="scroll" href="#order">Order</a>
+		  </nav>
+		  <!--home-->
+	      <div class="banner" id="house">
+		      <div class="banner-info"> 
+		        <div class="logo">
+					<a href="index.html"><h1>柒陆方<span>Cafe</span></h1><p>Student running...</p></a>
+				</div>
+				<h4>ENJOY THE COFFEE MADE BY YOUR FREINDS !</h4>
+			 </div>
+		 </div>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+  <!--start-about-->
+     <div class="about-section" id="about">
+	    <div class="container">
+			<div class="tittle-head">
+		       <h3 class="tittle">About</h3>
+			   <h4>About</h4>
+			</div>
+			<div class="col-md-6 about-pic">
+		            <img src="images/ab.jpg" class="img-responsive" alt="/"/>
+		    </div>
+		    <div class="about-top">
+				<div class="col-md-6 about-text">
+				  <h5> WELCOME TO 76 CAFE...</h5>
+				  <p>你们是否还在你们是否还在苦恼食堂与快客千篇一律的单调饮品以及一条条望不到尽头的长龙？<br/>
+				  可曾担心过外卖的禁令，让自己难以一饱口福？<br/>
+				  会不会顾虑因新学期繁重的课业，导致睡眠的缺乏，终日上课昏昏欲睡、半梦半醒，自己却无计可施?<br/>
+				  有否渴望，在困倦的深夜，有一杯香醇的咖啡相伴，暖洋洋的气息扑鼻而来，醇厚的口感融于唇畔，温暖了味蕾，温暖了胃，更淡去了心灵的疲倦… …</p>
+				  <h5> LOVE 76 & GET 76!</h5>
+				  <p>柒陆方将是您一如既往忠实的伙伴：<br/>
+				  	新的学期，新的血液，新的起点，柒陆方诚挚地欢迎您的光临，期待我们一同碰撞出灿烂的火花，一同体会由一颗颗简单朴实的心，创造出的一杯杯，最温暖的咖啡...</p>
+				  <h5> SOMETHING NEW ABOUT US...</h5>
+				  <p>在这个学期，柒陆方不仅会继续保持往年的经营模式，更将开启许多新的尝试：<br/>
+				  	或许你厌倦了纸币单一的付款形式，期望尝试多样化的购买方式；或许你醉心学习于教室，渴望足不出户，便享受送货上门的惬意体验。<br/>
+				  	请放心，柒陆方将为您解决后顾之忧－－我们将会开启全新的<font size="5px" color="red"><strong>微店</strong></font>销售模式，您只需动动手，点点单，付付款，您的咖啡将按照您的要求，准时出现在您的面前。</p>
+		    </div>
+		    </div>
+		</div>
+	 </div>
+  <!--//about-->
+
+
+    <!--start-services-->
+     <div class="service-section" id="service">
+	    <div class="container">
+			<div class="tittle-head ser">
+		       <h3 class="tittle">Services</h3>
+			   <h4>Services</h4>
+			</div>
+		    <div class="serve-grids">
+			      <div class="col-md-6 serve-left">
+							<div class="col-md-6 service-grid">
+								<div class="icon">
+								 <i class="glyphicon glyphicon-time"></i>
+								</div>
+								<h5>营业时间</h5>
+								<p>周一～周五：<br/>
+									6:30～7:30<br/>
+									12:00～13:00<br/>
+									16:30～18:30</p>
+							</div>
+							<div class="col-md-6 service-grid">
+								<div class="icon">
+								 <i class="glyphicon glyphicon-heart"></i>
+								</div>
+								<h5>地点</h5>
+								<p>上海市位育中学国际部<br/>
+									10号楼<br/>
+									1楼<br/>
+									楼梯口</p>
+							</div>
+					 </div>
+					 <div class="col-md-6 serve-img">
+					    <img src="images/s1.jpg"/>
+					 </div>
+			</div>
+		</div>
+	 </div>
+  <!--//about-->
+ 
+
+<!--start-gallery-->
+<div class="gallery" id="gallery">
+	<div class="container">
+	   <div class="tittle-head">
+		       <h3 class="tittle">Gallery</h3>
+			   <h4>Gallery</h4>
+			</div>
+			<div class="top-gallery">
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+							
+						</div>
+				</a>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+						
+						</div>
+				</a>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+							
+						</div>
+				</a>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+							
+						</div>
+				</a>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
+						<div class="textbox">
+							<h4>柒陆方cafe</h4>
+							<p>Welcome</p>
+					   </div>
+				   </a>
+				</div>
+			</div>
+		</div>	
+	</div>
+		<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+	<!--//gallery-->
+	<!-- pricing -->
+<div id="price" class="pricing">
+	<div class="container">
+	<div class="tittle-head ser">
+						<h3 class="tittle">Prices</h3>
+						<h4>Prices</h4>
+					</div>
+	<div class="price">
+	  <div class="col-md-6 order-top">
+			<li class="data order-special-a">
+				<h4>Coffee</h4>
+				<P>浓缩咖啡</P>
+				<P>摩卡咖啡</P>
+				<P>卡布奇诺</P>
+				<P>焦糖玛奇朵</P>
+			</li>
+			<li class="data order-special">
+				<div class="special-info">
+					<h4>Price</h4>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 7.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 12.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 15.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 15.00</h6></span></div>
+						</div>
+					</div>
+					</div>
+				</li>
+		</div>
+		<div class="col-md-6 order-top">
+			<li class="data order-special-a">
+				<h4>Other</h4>
+				<p>港式奶茶</p>
+				<P>抹茶奶茶</P>
+				<P>玫瑰奶茶</P>
+				<P>日式煎奶茶</P>
+			</li>
+			<li class="data order-special">
+				<div class="special-info">
+					<h4>Price</h4>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 12.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 12.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 12.00</h6></span></div>
+						</div>
+					</div>
+					<div class="pre-top">
+						<div class="pr-left">
+							<div class="item_add"><span class="item_price"><h6>RMB 12.00</h6></span></div>
+						</div>
+					</div>
+					</div>
+				</li>
+			
+		</div>
+	</div>
+	</div>
+</div>
+<!-- //pricing -->
+ 
+<!--order-->
+   <div class="order" id="order">
+	 <div class="container">
+		 <div class="tittle-head">
+		       <h3 class="tittle">Order</h3>
+			   <h4>Order</h4>
+		</div>
+		 <div class="order-form">
+				<div class="col-md-6 order-grid">
+				<form id="OrderForm" role="form" method="post">
+					<div class="form-group">
+					<p class="your-para">Name:</p>
+					<input class="form-control" name="Name" type="text" value="" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}" required>
+					</div>
+					<div class="form-group">
+					<p class="your-para">Room:</p>
+					<select multiple class="form-control" name="Room" required>
+						<option value="201">201</option>
+						<option value="202">202</option>
+						<option value="203">203</option>
+						<option value="301">301</option>
+						<option value="302">302</option>
+						<option value="303">303</option>
+					</select>
+					</div>
+					<div class="form-group">
+					<p class="your-para">Time:</p>
+					<select name="Time" multiple class="form-control" required>
+						<option value="morning">6:30~7:30</option>
+						<option value="noon">12:00~13:00</option>
+						<option value="afternoon">16:30~18:30</option>
+					</select>
+					</div>
+					<div class="form-group">
+					<p class="your-para">Product:</p>
+					<div>
+					<label class="radio-inline" for="CO1">
+						<input  type="radio" name="Product" value="C01" id="CO1" required/>摩卡咖啡
+					</label>
+					<label class="radio-inline" for="CO2">
+						<input  type="radio" name="Product" value="C02" id="CO2"/>卡布奇诺
+					</label>
+					<label class="radio-inline" for="CO3">
+						<input type="radio" name="Product" value="C03" id="CO3"/>浓缩咖啡
+					</label>
+					<label class="radio-inline" for="CO4">
+						<input type="radio" name="Product" value="C04" id="CO4"/>焦糖玛奇朵
+					</label>
+					</div>
+					<div>
+					<label class="radio-inline" for="MK1">
+						<input type="radio" name="Product" value="MK1" id="MK1"/>港式奶茶
+					</label>
+					<label class="radio-inline" for="MK2">
+						<input type="radio" name="Product" value="MK2" id="MK2"/>抹茶奶茶
+					</label>
+					<label class="radio-inline" for="MK3">
+						<input type="radio" name="Product" value="MK3" id="MK3"/>玫瑰奶茶
+					</label>
+					<label class="radio-inline" for="MK4">
+						<input type="radio" name="Product" value="MK4" id="MK4"/>日式煎奶茶
+					</label>
+					</div>
+					</div>
+					<div class="form-group">
+					<p class="your-para">Notes:</p>
+					<textarea cols="77" name="Note" rows="6" value=" " onFocus="this.value='';" onBlur="if (this.value == '') {this.value = '';}"></textarea>
+					</div>
+					<div class="send">
+						<input type="submit" value="Send" active/>
+					</div>
+				</form>
+				</div>
+		<div class="col-md-6 contact-in">
+			<img src="images/logo.jpg" class="img-responsive" alt="/">
+		</div>
+		</div>
+	</div>
+</div>
+	   <script type="text/javascript">
+
+         $(document).ready(function() {
+           // bind form using ajaxForm
+           $('#OrderForm')
+               .ajaxForm({
+                 url : 'http://127.0.0.1:3000/api/order',
+                 dataType : 'json',
+                 success : function (response) {
+                   alert(response.message);
+				   $('#OrderForm')[0].reset();
+                 },
+				 error: function(response) {
+                   alert(response.message);
+                 }
+               });
+         });
+
+	   </script>
+
+	<!--/footer-->
+			<div class="copy">
+		              <p>Copyright &copy; 2015.柒陆方 All rights reserved. Contact email: <a href="mailto:qiliufang_coffee@126.com">qiliufang_coffee@126.com</a></p>
+		            </div>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										$().UItoTop({ easingType: 'easeOutQuart' });
+									});
+								</script>
+		<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

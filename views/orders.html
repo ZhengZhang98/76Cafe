@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap.no-icons.min.css">
+
+    <script src="https://code.angularjs.org/1.1.0/angular.min.js"></script>
+    <script src="js/orders.js"></script>
+</head>
+
+
+<body ng-app="myModule">
+    <div ng-controller="ctrlRead">
+        <table class="table table-striped table-condensed table-hover">
+            <thead>
+
+            <tr>
+                <th class="name" custom-sort order="'name'" sort="sort">Name&nbsp;</th>
+                <th class="address" custom-sort order="'address'" sort="sort">Room&nbsp;</th>
+                <th class="p_id" custom-sort order="'p_id'" sort="sort">Product&nbsp;</th>
+                <th class="time" custom-sort order="'time'" sort="sort">Time&nbsp;</th>
+                <th class="note" custom-sort order="'note'" sort="sort">Note&nbsp;</th>
+                <th class="action">Action&nbsp;</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <td colspan="6">
+                <div class="pagination pull-right">
+                    <ul>
+                        <li ng-class="{disabled: currentPage == 0}">
+                            <a href ng-click="prevPage()">« Prev</a>
+                        </li>
+
+                        <li ng-repeat="n in range(pagedItems.length, currentPage, currentPage + gap) "
+                            ng-class="{active: n == currentPage}"
+                            ng-click="setPage()">
+                            <a href ng-bind="n + 1">1</a>
+                        </li>
+
+                        <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}">
+                            <a href ng-click="nextPage()">Next »</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            </tfoot>
+            <tbody>
+            <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sort.sortingOrder:sort.reverse">
+                <td>{{item.name}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.p_id}}</td>
+                <td>{{item.time}}</td>
+                <td>{{item.note}}</td>
+                <td><button ng-click="finished(item.id)">finished</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
