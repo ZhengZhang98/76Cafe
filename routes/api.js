@@ -43,15 +43,14 @@ router.post('/order', function(req, res, next){
     ];
     var query = "INSERT INTO Orders (name, address, p_id, time, note) VALUES ?";
     DBService.runQueryData(query, data, function(err, result){
-      if(err) throw err;
+      if(err) handleError(res, err);
       console.log("Order Posted: "+ JSON.stringify(result));
+      var response = {
+        "status": '200',
+        "message": "Thanks for ordering from 76 Cafe! Hope you can get all 7's in the IB exam!"
+      };
+      res.status(200).end(JSON.stringify(response));
     });
-  
-    var response = {
-      "status": '200',
-      "message": "Thanks for ordering from 76 Cafe! Hope you can get all 7's in the IB exam!"
-    };
-    res.status(200).end(JSON.stringify(response));
   }
 });
 
