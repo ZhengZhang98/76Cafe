@@ -393,7 +393,7 @@ function hideURLbar(){window.scrollTo(0,1);}
            // bind form using ajaxForm
            $('#OrderForm')
                .ajaxForm({
-                 url : 'http://127.0.0.1:3000/api/order',
+                 url : '/api/order',
                  dataType : 'json',
                  success : function (response) {
                    alert(response.message);
