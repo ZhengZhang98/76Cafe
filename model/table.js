@@ -1,12 +1,13 @@
 /**
  * Created by Zabrina on 2018-01-20.
  */
+var secret = require('../services/secret');
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  password: secret,
   database: "cafe"
 });
 
