@@ -1,11 +1,12 @@
 /**
  * Created by Zabrina on 2018-01-20.
  */
+var secret = require('./secret');
 var mysql = require('mysql');
 var pool  = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "",
+  password: secret,
   database: "cafe"
 });
 

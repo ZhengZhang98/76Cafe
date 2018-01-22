@@ -1,9 +1,9 @@
 /**
  * Created by Zabrina on 2018-01-21.
  */
-var fessmodule = angular.module('myModule', []);
+var mymodule = angular.module('myModule', []);
 
-fessmodule.controller('ctrlRead', function ($scope, $filter, $http, $route) {
+mymodule.controller('ctrlRead', function ($scope, $filter, $http, $route) {
   
   // init
   $scope.sort = {
@@ -114,9 +114,9 @@ fessmodule.controller('ctrlRead', function ($scope, $filter, $http, $route) {
 });
 
 
-fessmodule.$inject = ['$scope', '$filter'];
+mymodule.$inject = ['$scope', '$filter'];
 
-fessmodule.directive("customSort", function() {
+mymodule.directive("customSort", function() {
   return {
     restrict: 'A',
     transclude: true,
